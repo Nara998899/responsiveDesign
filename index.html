@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lab3 Responsive webpage</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+          
+            body {
+                font-size: 0px;
+            }
+            h1{background-color: lightskyblue; text-align: center; 
+                font-weight: bold; margin: 0;
+                font-size: 20px;
+                width: 99%;
+            }
+            #m{background-color:darkslategray; width: 99%;
+            }
+            .menu{
+                border-right: solid;
+                border-color: black;
+                display: inline-block;
+                text-align: center;
+                color: white;
+                width: 60px;
+                margin: 2px;
+                padding: 4px;
+                font-size: 16px;
+
+            }
+            .column{
+                float: left;
+                width: 33%;
+            }
+            
+            #a{
+                background-color:darkgrey;
+                height: 200px;
+                font-size: 14px;
+            }
+            #b{
+                background-color:silver;
+                height: 200px;
+                font-size: 14px;
+            }
+            #c{
+                background-color:lightgray;
+                height: 200px;
+                font-size: 14px;
+            }
+            h2{
+                clear: left;
+                background-color: darkslategray; text-align: center; 
+                color: white;
+                font-weight: lighter;
+                margin: 0;
+                font-size: 14px;
+                width: 99%;
+                padding-bottom: 5px;
+                padding-top: 5px;
+            }
+            @media only screen and (max-width: 800px) {
+                .column{
+                    color: brown;
+                }
+                #a,#b{
+                    float: left;
+                    width: 49.5%;
+                }
+                #c{
+                    display: block;
+                    width: 99%;
+                }
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Header</h1>
+        <div id="m">
+            <div class="menu">Menu1</div>
+            <div class="menu">Menu2</div>
+            <div class="menu">Menu3</div>
+        </div>
+        <div class="container">
+            <div class="column" id="a">Column1</div>
+            <div class="column" id="b">Column2</div>
+            <div class="column" id="c">Column3</div>
+        </div>
+    <h2>Footer</h2>
+    </body>
+   
+
+</html>
